@@ -1,0 +1,79 @@
+*{margin:0;padding:0;}
+body ul{
+	list-style-type:none;
+}
+#all-content{
+	width: 403px;
+	height: 599px;
+	border:1px solid black;
+	margin:150px auto;
+}
+.page1 ul li div{
+	width: 200px;
+	height: 298px;
+	text-align:center;	
+	position:absolute;
+	-webkit-transition:.8s ease-in-out;
+	-moz-transition:.8s ease-in-out;
+	-webkit-backface-visibility:hidden;
+	-webkit-perspective: 800px;
+}
+.page1 ul li div h3{
+	font:30px "隶书";
+	line-height:18px;
+}
+.page1 ul li div p{
+	margin-top:50px;
+	font:15px "黑体";
+	line-height:30px;
+}
+#page1{
+	position:relative;
+	margin:1px;
+}
+#page2{
+	position:relative;
+	margin-left:202px;
+	margin-top:1px;
+}
+#page3{
+	position:relative;
+	margin-top:300px;
+	margin-left:1px;
+}
+#page4{
+	position:relative;
+	margin-top:300px;
+	margin-left:202px;
+}
+.page1 ul li div:first-child{	
+	background:url('../image/kabei.png');
+	z-index:2;
+	-webkit-transform: rotateY(0deg);
+	-moz-transform:rotateY(0deg);
+}
+.page1 ul li div:last-child{
+	z-index:1;
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+}
+.page1 ul li:hover div:first-child{
+	-webkit-transform:rotateY(-180deg);
+	-moz-transform:rotateY(-180deg);
+}
+.page1 ul li:hover div:last-child{
+	-webkit-transform:rotateY(0deg);
+	-moz-transform:rotateY(0deg);
+}
+.content1{
+	background:url('../image/death-dargon0.jpg');
+}
+.content2{
+	background:url('../image/huoge.jpg');
+}
+.content3{
+	background:url('../image/timg (1).jpg');
+}
+.content4{
+	background:url('../image/tuhate.jpg');
+}
